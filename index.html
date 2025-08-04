@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Happy Birthday Sona ji</title>
@@ -15,178 +16,167 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-    }.gift-box {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #2c003e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  flex-direction: column;
-}
-.box {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  background: #ff1493;
-  border-radius: 20px;
-  box-shadow: 0 0 30px #fff;
-  cursor: pointer;
-}
-.lid {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 50px;
-  background: #c71585;
-  border-radius: 20px 20px 0 0;
-  transition: transform 1s ease;
-  transform-origin: top center;
-  z-index: 2;
-}
-.open .lid {
-  transform: rotateX(-120deg);
-}
-.ribbon-vertical, .ribbon-horizontal {
-  position: absolute;
-  background: #fff;
-}
-.ribbon-vertical {
-  width: 20px;
-  height: 100%;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-}
-.ribbon-horizontal {
-  height: 20px;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-.tap-text {
-  margin-top: 30px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-shadow: 0 0 10px #fff;
-}
-
-.headline {
-  display: none;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  text-shadow: 0 0 20px #ff00ff;
-  margin: 20px;
-  animation: fadeIn 3s ease forwards;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; transform: scale(0.5); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px 15px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 40px rgba(255, 0, 200, 0.8), 0 0 20px #ff00c8, 0 0 10px #fff;
-  flex-direction: column;
-  align-items: center;
-  animation: float 4s ease-in-out infinite;
-  width: 90%;
-  margin: 100px auto 20px;
-  max-width: 500px;
-  position: relative;
-  z-index: 2;
-  display: none;
-}
-
-.message {
-  text-align: center;
-}
-.message p {
-  font-size: 1.2rem;
-  color: #ffe;
-  text-shadow: 0 0 10px #ff99ff, 0 0 15px #ff33cc;
-  line-height: 1.8;
-  font-weight: bold;
-}
-
-.next-btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #ff00c8;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  box-shadow: 0 0 10px #ff33cc;
-  cursor: pointer;
-  animation: float 2s infinite;
-  display: none;
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
-#musicContainer {
-  display: none;
-  margin-top: 10px;
-  z-index: 2;
-}
-audio#bgMusic {
-  border: 2px solid #ff00c8;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 10px #ff00c8, 0 0 20px #ff00c8, 0 0 30px #ff33cc;
-}
-
-.rain, .hearts {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 10;
-}
-.rain span, .hearts span {
-  position: absolute;
-  display: block;
-  width: 10px;
-  height: 10px;
-  background: hsl(var(--hue), 100%, 60%);
-  animation: fall 6s linear infinite;
-  border-radius: 50%;
-  box-shadow: 0 0 10px currentColor;
-  opacity: 1;
-}
-.hearts span {
-  width: 20px;
-  height: 20px;
-  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
-  animation: fallHeart 8s linear infinite;
-  opacity: 0.9;
-}
-@keyframes fall {
-  0% { transform: translateY(-10vh) scale(1); }
-  100% { transform: translateY(110vh) scale(1.2); }
-}
-@keyframes fallHeart {
-  0% { transform: translateY(-10vh) rotate(0deg); }
-  100% { transform: translateY(110vh) rotate(360deg); }
-}
-
+    }
+    .gift-box {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #2c003e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      flex-direction: column;
+    }
+    .box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: #ff1493;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #fff;
+      cursor: pointer;
+    }
+    .lid {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      background: #c71585;
+      border-radius: 20px 20px 0 0;
+      transition: transform 1s ease;
+      transform-origin: top center;
+      z-index: 2;
+    }
+    .open .lid {
+      transform: rotateX(-120deg);
+    }
+    .ribbon-vertical, .ribbon-horizontal {
+      position: absolute;
+      background: #fff;
+    }
+    .ribbon-vertical {
+      width: 20px;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+    .ribbon-horizontal {
+      height: 20px;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    .tap-text {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px #fff;
+    }
+    .headline {
+      display: none;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 0 20px #ff00ff;
+      margin: 20px;
+      animation: fadeIn 3s ease forwards;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.5); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px 15px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 40px rgba(255, 0, 200, 0.8), 0 0 20px #ff00c8, 0 0 10px #fff;
+      flex-direction: column;
+      align-items: center;
+      animation: float 4s ease-in-out infinite;
+      width: 90%;
+      margin: 100px auto 20px;
+      max-width: 500px;
+      position: relative;
+      z-index: 2;
+      display: none;
+    }
+    .message { text-align: center; }
+    .message p {
+      font-size: 1.2rem;
+      color: #ffe;
+      text-shadow: 0 0 10px #ff99ff, 0 0 15px #ff33cc;
+      line-height: 1.8;
+      font-weight: bold;
+    }
+    .next-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff00c8;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 0 10px #ff33cc;
+      cursor: pointer;
+      animation: float 2s infinite;
+      display: none;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    #musicContainer {
+      margin-top: 10px;
+      z-index: 2;
+    }
+    audio#bgMusic {
+      border: 2px solid #ff00c8;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 10px #ff00c8, 0 0 20px #ff00c8, 0 0 30px #ff33cc;
+    }
+    .rain, .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 10;
+    }
+    .rain span, .hearts span {
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: hsl(var(--hue), 100%, 60%);
+      animation: fall 6s linear infinite;
+      border-radius: 50%;
+      box-shadow: 0 0 10px currentColor;
+      opacity: 1;
+    }
+    .hearts span {
+      width: 20px;
+      height: 20px;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
+      animation: fallHeart 8s linear infinite;
+      opacity: 0.9;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-10vh) scale(1); }
+      100% { transform: translateY(110vh) scale(1.2); }
+    }
+    @keyframes fallHeart {
+      0% { transform: translateY(-10vh) rotate(0deg); }
+      100% { transform: translateY(110vh) rotate(360deg); }
+    }
   </style>
 </head>
 <body>
@@ -197,19 +187,21 @@ audio#bgMusic {
       <div class="ribbon-horizontal"></div>
     </div>
     <div class="tap-text">🎁 Tap to open your surprise 🎁</div>
-  </div>  <div class="headline" id="headline">🎉 Happy Birthday Sona ji 🎉<br>Janmdin ki dher saari shubhkamnaye ❤️</div>  <div class="rain" id="rain"></div>
+  </div>
+  <div class="headline" id="headline">🎉 Happy Birthday Sona ji 🎉<br>Janmdin ki dher saari shubhkamnaye ❤️</div>
+  <div class="rain" id="rain"></div>
   <div class="hearts" id="hearts"></div>
   <div class="card" id="card">
-    <div class="message">
-      <p id="cardText"></p>
-    </div>
+    <div class="message"><p id="cardText"></p></div>
     <button class="next-btn" onclick="showNextCard()" id="nextBtn">Next</button>
-  </div>  <div id="musicContainer">
+  </div>
+  <div id="musicContainer">
     <audio id="bgMusic" controls preload="auto">
       <source src="birthday.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-  </div>  <script>
+  </div>
+  <script>
     const rain = document.getElementById("rain");
     const hearts = document.getElementById("hearts");
     const giftBox = document.getElementById("giftBox");
@@ -247,7 +239,6 @@ audio#bgMusic {
       setTimeout(() => {
         generateRain(20, true);
         hearts.style.display = "block";
-        music.play();
         musicContainer.style.display = "block";
         card.style.display = "flex";
         nextBtn.style.display = "inline-block";
@@ -296,5 +287,6 @@ audio#bgMusic {
         }
       }, 60);
     }
-  </script></body>
+  </script>
+</body>
 </html>
